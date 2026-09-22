@@ -11,7 +11,7 @@ public class CuentaBancaria {
         this.saldo = saldo;
         this.titular = titular;
         this.numeroCuenta = numeroCuenta;
-        this.tipoCuenta = tipoCuenta;
+        this.tipoCuenta = tipCuenta;
         this.clave = clave;
     }
 
