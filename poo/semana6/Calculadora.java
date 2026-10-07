@@ -8,7 +8,7 @@ public class Calculadora {
         System.out.println("Ingrese un número: ");
         int a = sc.nextInt();
         System.out.println("Ingrese otro número: ");
-        int b = sc.nextInt();
+        int b = sc.nextInt();   
 
         System.out.println("La suma es: " + (a + b));
 
