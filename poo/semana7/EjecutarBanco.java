@@ -7,5 +7,6 @@ public class EjecutarBanco {
         Banco uccBank = new Banco("UCC Banco", "Carrera 76 #2-5", cuenta);
 
         System.out.println(uccBank);
+        uccBank.abrirCuenta(cliente);
     }
 }
