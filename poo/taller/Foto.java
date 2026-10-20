@@ -1,4 +1,4 @@
-package poo.taller;
+package taller;
 
 public class Foto {
     
@@ -9,6 +9,6 @@ public class Foto {
     }
 
     public void print(){
-        System.out.println(fichero);
+        System.out.println("Imprimiendo fichero: " + fichero);
     }
 }

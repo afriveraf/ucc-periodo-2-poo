@@ -1,4 +1,4 @@
-package poo.taller;
+package taller;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -31,6 +31,17 @@ public class Pedido {
 
     public int getNumeroTarjetaCredito() {
         return numeroTarjetaCredito;
+    }
+
+    public void mostrarPedido(){
+        System.out.println("\t----Detalles del pedido:----");
+        System.out.println(cliente);
+        System.out.println("Fecha: " + fecha);
+        System.out.println("Número de Tarjeta: " + numeroTarjetaCredito);
+        System.out.println("Cantidad de productos: " + productos.length);
+        for (int i = 0; i < productos.length; i++) {
+            System.out.println("Número de producto: " + productos[i].getNumero());
+        }
     }
 
     @Override

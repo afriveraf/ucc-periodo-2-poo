@@ -1,4 +1,4 @@
-package poo.taller;
+package taller;
 
 import java.util.Arrays;
 
@@ -11,6 +11,13 @@ public class Impresion extends Producto{
         super(numero);
         this.color = color;
         this.fotos = fotos;
+    }
+
+    public void printFotos(){
+        System.out.println("Imprimiendo en color: " + color);
+        for (int i = 0; i < fotos.length; i++) {
+            fotos[i].print();
+        }
     }
 
     @Override

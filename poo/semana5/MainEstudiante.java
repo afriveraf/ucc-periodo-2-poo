@@ -1,4 +1,4 @@
-package poo.semana5;
+package semana5;
 
 public class MainEstudiante {
     

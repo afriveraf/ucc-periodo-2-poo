@@ -1,4 +1,4 @@
-package poo.semana6;
+package semana6;
 
 import java.util.Scanner;
 
@@ -15,5 +15,6 @@ public class Calculadora {
         System.out.println("La resta es: " + (a - b));
         System.out.println("La multiplicación es: " + (a * b));
         System.out.println("La division es: " + (a / b));
+        sc.close();
     }
 }

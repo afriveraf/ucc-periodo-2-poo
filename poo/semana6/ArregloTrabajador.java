@@ -1,4 +1,4 @@
-package poo.semana6;
+package semana6;
 
 public class ArregloTrabajador {    
     public static void main(String[] args) {

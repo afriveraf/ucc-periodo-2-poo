@@ -1,4 +1,4 @@
-package poo.taller;
+package taller;
 
 public class Cliente {
     

@@ -1,4 +1,4 @@
-package poo.semana7;
+package semana7;
 
 public class Banco {
     

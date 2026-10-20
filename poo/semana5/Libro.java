@@ -1,4 +1,4 @@
-package poo.semana5;
+package semana5;
 
 public class Libro {
     
@@ -38,5 +38,5 @@ public class Libro {
         this.disponible = disponible;
     }
 
-    public 
+     
 }
