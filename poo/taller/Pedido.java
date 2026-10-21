@@ -9,12 +9,14 @@ public class Pedido {
     private Producto[] productos;
     private Date fecha;
     private int numeroTarjetaCredito;
+    private TipoDePago tipoDePago;
     
-    public Pedido(Cliente cliente, Producto[] productos, Date fecha, int numeroTarjetaCredito) {
+    public Pedido(Cliente cliente, Producto[] productos, Date fecha, int numeroTarjetaCredito, TipoDePago tipoDePago) {
         this.cliente = cliente;
         this.productos = productos;
         this.fecha = fecha;
         this.numeroTarjetaCredito = numeroTarjetaCredito;
+        this.tipoDePago = tipoDePago;
     }
 
     public Cliente getCliente() {
@@ -42,6 +44,10 @@ public class Pedido {
         for (int i = 0; i < productos.length; i++) {
             System.out.println("Número de producto: " + productos[i].getNumero());
         }
+    }
+
+    public void imprimirPago(){
+        this.tipoDePago.pago();
     }
 
     @Override

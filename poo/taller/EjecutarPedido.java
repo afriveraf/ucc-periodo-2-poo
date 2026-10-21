@@ -16,8 +16,10 @@ public class EjecutarPedido {
         productos[0] = impresion;
         productos[1] = camara;
         Date now = new Date();
-        Pedido pedido = new Pedido(cliente1, productos, now, 1233);
+        TipoDePago tipoDePago = new TarjetaCredito();
+        Pedido pedido = new Pedido(cliente1, productos, now, 1233, tipoDePago);
         pedido.mostrarPedido();
+        pedido.imprimirPago();
         impresion.printFotos();
         System.out.println(camara);
     }
