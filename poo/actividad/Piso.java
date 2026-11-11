@@ -3,9 +3,9 @@ package actividad;
 public class Piso {
     
     private int numero;
-    private BotonPiso botonSubir;
-    private BotonPiso botonBajar;
-    private PuertaPiso puerta;
+    private Boton botonSubir;
+    private Boton botonBajar;
+    private Puerta puerta;
 
     /** Constructor: crea los dos botones y la puerta de este piso. */
     public Piso(int numero) {
@@ -61,7 +61,7 @@ public class Piso {
         return numero;
     }
 
-    public PuertaPiso getPuerta() {
+    public Puerta getPuerta() {
         return puerta;
     }
 }

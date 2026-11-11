@@ -10,8 +10,8 @@ public class Ascensor {
     private ArrayList<Integer> paradasPendientes;
 
     // Composicion: el ascensor tiene estos objetos
-    private PuertaAscensor puerta;
-    private ArrayList<BotonAscensor> botonesDestino;
+    private Puerta puerta;
+    private ArrayList<Boton> botonesDestino;
     private Boton botonMantenerPuertas;
 
     /** Constructor: crea la puerta y un boton de destino por cada piso. */
@@ -134,7 +134,7 @@ public class Ascensor {
 
     /** Dice si algun boton del ascensor esta danado. */
     public boolean hayFallaBotones() {
-        for (BotonAscensor boton : botonesDestino) {
+        for (Boton boton : botonesDestino) {
             if (!boton.isFuncional()) {
                 return true;
             }
@@ -175,7 +175,7 @@ public class Ascensor {
         return !paradasPendientes.isEmpty();
     }
 
-    public PuertaAscensor getPuerta() {
+    public Puerta getPuerta() {
         return puerta;
     }
 }
